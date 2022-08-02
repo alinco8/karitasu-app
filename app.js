@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Welcome to api!');
+    res.sendFile(__dirname + '/pages/top.html');
 });
 
 app.listen(port, () => {
