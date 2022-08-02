@@ -1,11 +1,10 @@
 const http = require('http');
 const express = require('express');
-const vhost = require('vhost');
 
 const app = express();
 const main = express();
 const api = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 main.get('/', (req, res) => {
     res.sendFile(__dirname + '/pages/top.html');
